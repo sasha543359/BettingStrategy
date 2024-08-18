@@ -2,8 +2,8 @@
 
 public class Program
 {
-    static int balance = 10000;
-    static int stavka = 10;
+    static int balance = 1000;
+    static int stavka = 1;
     static int wins = 0;
     static void Main(string[] args)
     {
@@ -64,7 +64,7 @@ public class Program
             wins++;
             balance += stavka * 2;
             int win = stavka;
-            stavka = 10;
+            stavka = 1;
             return $"| Win: {win * 2}";
         }
         else
