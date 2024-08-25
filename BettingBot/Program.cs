@@ -88,7 +88,7 @@ public class Program
     private static double PlaceBetWhenPossible(ChromeDriver driver, ref double currentBet, double initialBalance, ref bool isFirstBet)
     {
         // Проверяем, активна ли кнопка
-        var betButton = driver.FindElement(By.Id("newBetApiGray"));
+        var betButton = driver.FindElement(By.Id("newBetApiBlue"));
 
         // Ожидание, пока кнопка станет неактивной (начало вращения)
         while (betButton.GetAttribute("disabled") == null)
